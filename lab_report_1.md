@@ -1,6 +1,6 @@
 # Lab Report 1
 
-## Hello fellow CSE 15L students! This is a tutorial on how to setup and ssh(login) into your course specific CSE 15L account in the remote ieng6 server, running a few commands in the remote server, install and setup VSCode in your local environment.
+## Hello fellow CSE 15L students! This is a tutorial on how to setup and ssh(login) into your course specific CSE 15L account in the remote ieng6 server, running a few commands in the remote server, and install and setup VSCode in your local environment.
 ## NOTE: This tutorial is created specifically for students who poses a version of the mac operating system(OS). Although many of the steps are similar to what you would do in a Windows OS, some steps might differ.
 
 Outline:
@@ -31,7 +31,10 @@ Add some resources in every step so that the reader can better understand what's
   7. Next, the macOS will ask you for your user password to be able to move VSCode to the Applications directory. Type is and press Enter.
   **Success** :thumbsup: You have successfully installed VSCode to your local environment. Fell free to open and play around the IDE.
 2. Remotely connecting to the ieng6 server
-    This is a fun step because it
+
+  What exactly does it mean to "Remotely connect to the ieng6 server"? Think of a server as a powerful computer that stores and manages data, runs applications, or provides services to other computers or devices. It could be a web server that hosts websites, a file server that stores files, or a database server that manages data. When you remotely connect to a server, it means you're able to interact with and control that server as if you were physically sitting in front of it, even if you're in a different location. It allows you to perform various tasks and manage the server's resources, settings, and data without directly accessing it. Overall, remotely connecting to a server allows you to control and manage a computer server from a different location, enabling efficient administration and utilization of resources.
+  * **Prerequisites**: Before we begin this step you need to have access to you course-specific CSE 15L account. I will explain how to look up your username to your account and reset the password.
+    1.  
 
 // TODO; Remember to add screenshots at the end and run this through grammarly and remove unnecessary
 //       comments.
