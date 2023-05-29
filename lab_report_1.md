@@ -21,8 +21,8 @@ Add some resources in every step so that the reader can better understand what's
 	* Version Control: Version control tools help you manage different versions of your code. They allow you to save snapshots of your project at various stages, track changes, and collaborate with others without overwriting each other's work. It helps you keep your code organized and enables teamwork.
 
   To install VSCode:
-	1. Open up your favorite internet browser(Chrome, Firefox, Safari, etc.)
-	2. In the search bar type the following link: [https://code.visualstudio.com/download](https://code.visualstudio.com/download).
+1. Open up your favorite internet browser(Chrome, Firefox, Safari, etc.)
+2. In the search bar type the following link: [https://code.visualstudio.com/download](https://code.visualstudio.com/download).
 	![Image](https://github.com/AlbardEspinoza/cse15l-lab-reports/blob/main/VSCode_download_page.png)
 
   3. To choose the correct version of VSCode to download you need to know exactly which version of the macOS you're running as well as some hardware specs of your laptop. To do this go to your Mac's menu bar and click the apple logo and select the first option labeled: **About This Mac**. This will open of an overview of your laptop's specifications(see the image below) like the version of macOS as well as processor. If you're laptop is running a macOS version 10.11+ than select the version of VSCode that is under the Apple logo labeled **macOS 10.11+**. If it's running a previous version you will have to download the .zip files based on the processor that you're laptop has. If within the processor section of your laptop's specs states that is using Intel, then select the .zip file labeled **Intel chip**. If you have one of the latest mac laptops you might have an M1 or M2 processor. If that's the case choose the .zip file labeled **Apple silicon**.
