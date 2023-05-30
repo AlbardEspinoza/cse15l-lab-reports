@@ -44,7 +44,7 @@
 
 * To remotely connect to the ieng6 server:
   1. Open the Terminal. This is a command-line interface that lets you interact with the operating system.
-  2. Type the following command: **ssh <your_username>@pi-cluster**. What does this command do? The ssh command stands for Secure Shell, and it is used to establish a secure and encrypted connection between your local computer and a remote computer or server over a network. It allows you to log in to a remote machine and execute commands on that machine as if you were sitting right in front of it.
+  2. Type the following command: **ssh <your_username>@ieng6.ucsd.edu**. What does this command do? The ssh command stands for Secure Shell, and it is used to establish a secure and encrypted connection between your local computer and a remote computer or server over a network. It allows you to log in to a remote machine and execute commands on that machine as if you were sitting right in front of it.
   3. Since this will be your first time connecting to this server a few things will happen:
         * Since it's your first time connecting to the server, your SSH client doesn't recognize the server's identity. As a security measure, the SSH client displays a warning to let you know that it cannot verify the authenticity of the server.
         * To ensure you are connecting to the correct server and not a malicious one, SSH uses a fingerprint—a unique identifier generated from the server's public key. Your SSH client calculates the fingerprint and displays it to you.
