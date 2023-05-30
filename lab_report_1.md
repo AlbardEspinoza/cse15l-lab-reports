@@ -31,13 +31,13 @@ Add some resources in every step so that the reader can better understand what's
   6. Next you will see the VSCode application being created in your Downloads folder(see the image below). You need to move VSCode from your Downloads directory to your Applications directory. To do that you can just easily drag the the VSCode icon within the Downloads directory and drop it in the Applications directory within the Finder window.![Image](https://github.com/AlbardEspinoza/cse15l-lab-reports/blob/main/VSCode_downloaded_app.png)
   7. Next, the macOS will ask you for your user password to be able to move VSCode to the Applications directory. Type is and press Enter.
   **Success** :thumbsup: You have successfully installed VSCode to your local environment. Fell free to open and play around the IDE.
-  
+
 2. Remotely connecting to the ieng6 server
-  
+
   What exactly does it mean to "Remotely connect to the ieng6 server"? Think of a server as a powerful computer that stores and manages data, runs applications, or provides services to other computers or devices. It could be a web server that hosts websites, a file server that stores files, or a database server that manages data. When you remotely connect to a server, it means you're able to interact with and control that server as if you were physically sitting in front of it, even if you're in a different location. It allows you to perform various tasks and manage the server's resources, settings, and data without directly accessing it. Overall, remotely connecting to a server allows you to control and manage a computer server from a different location, enabling efficient administration and utilization of resources.
   * **Prerequisites**: Before we begin this step you need to have access to you course-specific CSE 15L account. I will explain how to look up your username to your account and reset the password.
     1. Head to the following link: [https://sal.ucsd.edu/students/a16619808](https://sal.ucsd.edu/students/a16619808). You will need to provide your Student Single Sign-On credentials.
-    2. When you login you will see a dashboard will all the resources that are provided in the classes that you're taking. One of them will be labeled "CSE15L" (see image displayed below). The username that is circled in the image below will be your username to log into the remote server. Make sure you write this down.
+    2. When you login you will see a dashboard will all the resources that are provided in the classes that you're taking. One of them will be labeled "CSE15L" (see image displayed below). The username that is circled in the image below will be your username to log into the remote server. Make sure you write this down.![Image](https://github.com/AlbardEspinoza/cse15l-lab-reports/blob/main/account_lookup.png)
     3. You need to reset the password for that account. Head to the following link: [http://password.ucsd.edu/](http://password.ucsd.edu/). You will be redirected to a password change tool. In the bottom of the page you will see a prompt asking for the username of the account you want to reset the password. Provide the username you got in step 3.
     4. A link will show up labeled "I want to reset my course-specific account", click it.
     5. You will need to verify your UCSD student email address in the following page. When you do, an email will be sent to your student email address with a link to reset your CSE 15L account password.
@@ -65,7 +65,7 @@ Add some resources in every step so that the reader can better understand what's
 3. Finally, let's try a few commands in the server to get familiar with the environment.
     1. You're probably curious about what's in this remote server. Like files, pictures, etc. Type the command **ls -a**. This command will list all the files that are present in that directory. Including the hidden files that do not show up on Finder.
     2. You might also be curious in which directory you're on right now. Type **pwd**. This command will print to the terminal the directory that you're currently on.
-    3. Lastly, let's try out making a directory in your current working directory. Type **mkdir test**. This command will create a directory in your current working directory named test!
+    3. Lastly, let's try out making a directory in your current working directory. Type **mkdir test**. This command will create a directory in your current working directory named test! See image below listing examples of running the commands.![Image](https://github.com/AlbardEspinoza/cse15l-lab-reports/blob/main/command_examples.png)
 
 You're all set to begin in CSE 15L. Hope this tutorial was helpful! If you need any extra help don't hesitate asking your TAs or attending your professors office hours.
 
