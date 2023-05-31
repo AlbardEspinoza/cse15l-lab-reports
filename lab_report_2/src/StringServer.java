@@ -12,7 +12,7 @@ class Handler implements URLHandler {
         if (url.getPath().equals("/add-message")) {
             /* Instead of creating a String Array here I just passed
              * the value of the Query to the ArrayList directly. It's 
-             * not as redable, but it's a little more efficient.
+             * not as readable, but it's a little more efficient.
             */
             messages.add(url.getQuery().split("=")[1]);
         }
