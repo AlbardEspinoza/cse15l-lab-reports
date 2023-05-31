@@ -1,3 +1,3 @@
-javac Server.java NumberServer.java
-java NumberServer $1
+javac Server.java StringServer.java
+java StringServer $1
 rm *.class
