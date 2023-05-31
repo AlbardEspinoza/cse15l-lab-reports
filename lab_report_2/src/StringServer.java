@@ -8,7 +8,12 @@ class Handler implements URLHandler {
     ArrayList<String> messages = new ArrayList<>();
 
     public String handleRequest(URI url) {
+        System.out.println("Path: " + url.getPath());
         if (url.getPath().equals("/add-message")) {
+            /* Instead of creating a String Array here I just passed
+             * the value of the Query to the ArrayList directly. It's 
+             * not as redable, but it's a little more efficient.
+            */
             messages.add(url.getQuery().split("=")[1]);
         }
         else {
