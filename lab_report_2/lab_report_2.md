@@ -102,7 +102,12 @@ public class Server {
 }
 ```
 
-**Examples of calling "/add-message" path:**
+**Example of calling "localhost:8081":**
 
+![Image](https://github.com/AlbardEspinoza/cse15l-lab-reports/blob/main/lab_report_2/screenshots/404_not_found.png)
 
+**Examples of callind "/add-message" path:**
 
+![Image](https://github.com/AlbardEspinoza/cse15l-lab-reports/blob/main/lab_report_2/screenshots/First_attempt.png)
+
+![](https://github.com/AlbardEspinoza/cse15l-lab-reports/blob/main/lab_report_2/screenshots/Second_attempt.png)
