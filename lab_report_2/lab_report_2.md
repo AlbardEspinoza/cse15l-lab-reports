@@ -213,3 +213,9 @@ public class ArrayExamples {
 **Fix description**
 
 * What was happening in reverseInPlace before the fix was that it was reversing the array on top of the original array. So, it was able to copy correctly up until half of the array, if the array was of even-length, or until half of the array plus one, if the array was of odd-length. The fix was to simple store a copy of the original array and use the copy as as a reference to copy to correct values into the original array.
+
+## Part 3
+
+* In a couple of sentences describe something new that you learned from lab in week 2 or week 3.
+  * Week 2: I learned to use the **curl** command. It was very interesting and useful since it allowed me to create a Bash file that was able to test if the output of my server was correct or not.
+  * Week 3: I learned about the **JUnit testing framework**. It was really useful since before knowing abou this framework I usually tested my code manually without any unit tests. It was very time-consuming and a very deprecated way to test code. JUnit allowed me to automate a lot of tasks when testing my code.
