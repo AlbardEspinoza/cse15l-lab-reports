@@ -127,4 +127,7 @@ public class Server {
   8. Within handleRequest the URI parameter calls getPath and the return value calls the equals method in the String class to verify that you're calling **/add-message** path.
   9. Lastly the messages field adds the value of the value of the query string to its ArrayList and returns the value to the handleRequestMethod.
 
+* How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+  * The only value of any field that changed from this specific request was the messages field in the Handler class in StringServer.java. The way it changed was by passing a specific value to the query string in the **/add-mesages** path, which was "First attempt." This was stored in the first index of the messages ArrayList.
+
 ![](https://github.com/AlbardEspinoza/cse15l-lab-reports/blob/main/lab_report_2/screenshots/Second_attempt.png)
