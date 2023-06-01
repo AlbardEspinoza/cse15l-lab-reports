@@ -2,7 +2,7 @@
 
 ## Part 1
 
-**StringServer:**
+**StringServer**
 
 ```java
 import java.io.IOException;
@@ -43,7 +43,7 @@ class StringServer {
 }
 ```
 
-**Server(Implemented the same one as Lab 2):**
+**Server(Implemented the same one as Lab 2)**
 
 ```java
 // A simple web server using Java's built-in HttpServer
@@ -101,11 +101,11 @@ public class Server {
 }
 ```
 
-**Example of calling "localhost:8081":**
+**Example of calling "localhost:8081"**
 
 ![Image](https://github.com/AlbardEspinoza/cse15l-lab-reports/blob/main/lab_report_2/screenshots/404_not_found.png)
 
-**Examples of calling "/add-message" path:**
+**Examples of calling "/add-message" path**
 
 ![Image](https://github.com/AlbardEspinoza/cse15l-lab-reports/blob/main/lab_report_2/screenshots/First_attempt.png)
 
