@@ -106,7 +106,7 @@ public class Server {
 
 ![Image](https://github.com/AlbardEspinoza/cse15l-lab-reports/blob/main/lab_report_2/screenshots/404_not_found.png)
 
-**Examples of callind "/add-message" path:**
+**Examples of calling "/add-message" path:**
 
 ![Image](https://github.com/AlbardEspinoza/cse15l-lab-reports/blob/main/lab_report_2/screenshots/First_attempt.png)
 
@@ -131,3 +131,8 @@ public class Server {
   * The only value of any field that changed from this specific request was the messages field in the Handler class in StringServer.java. The way it changed was by passing a specific value to the query string in the **/add-mesages** path, which was "First attempt." This was stored in the first index of the messages ArrayList.
 
 ![](https://github.com/AlbardEspinoza/cse15l-lab-reports/blob/main/lab_report_2/screenshots/Second_attempt.png)
+
+* Which methods are called in this example? What are the relevant arguments to those methods, and the values of any relevant fields of the class?
+  * The answers to these questions are the same as the previous example.
+* How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+  * The only value of any field that changed from this specific request was the messages field in the Handler class in StringServer.java. The way it changed was by passing a specific value to the query string in the **/add-mesages** path, which was "First attempt." This was stored in the first index of the messages ArrayList. Then when called the **/add-mesages** path again the messages field stored a second value in its ArrayList, which was "Second attempt."
