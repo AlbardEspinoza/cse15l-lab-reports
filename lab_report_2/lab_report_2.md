@@ -110,4 +110,21 @@ public class Server {
 
 ![Image](https://github.com/AlbardEspinoza/cse15l-lab-reports/blob/main/lab_report_2/screenshots/First_attempt.png)
 
+* Which methods are called in this example? What are the relevant arguments to those methods, and the values of any relevant fields of the class?
+  1. Main method in StringServer.java to begin the program
+     * The relevant arguments are the args String array, which contains in the first index the port number to start to the server.
+  2. Within the main method, if the user did not provide a port number when running the program System.out.println(SOPL) is called to display the user with an error about not providing the port number.
+  3. Within the main method, Server.start(in Server.java) is called to start the web server.
+     * The relevant arguments for Server.start are the port number and the instance of a Handler object.
+  4. Within the main method, SOPL is called again to display the the server has started to the terminal.
+  5. When I head to **http://localhost:8081/add-message?s=First%20attempt.** the handle method is called in Server.java in the ServerHttpHandler class.
+     * The relevant arguments for the handle method are HttpExchange parameter.
+     * The relevant fields of the ServerHttpHandler class are the URLHandler which gets assigned the instance variable of the Handler object mentioned in step 3.
+  6. Within the handle method in the ServerHttpHandler class the handleRequest method is called which is in StringServer.java in the Handler class.
+     * The relevant arguments in that class are the URI parameter which gets assigned the URI argument that gets returned when the HttpExchange parameter in the handle method calls getRequestURI.
+     * The relevant field in that class is the messages ArrayList which gets initiated immediately in its declaration with a reference to an object in the heap.
+  7. Within handleRequest SOPL is called to print out the URL path to the Terminal.
+  8. Within handleRequest the URI parameter calls getPath and the return value calls the equals method in the String class to verify that you're calling **/add-message** path.
+  9. Lastly the messages field adds the value of the value of the query string to its ArrayList and returns the value to the handleRequestMethod.
+
 ![](https://github.com/AlbardEspinoza/cse15l-lab-reports/blob/main/lab_report_2/screenshots/Second_attempt.png)
