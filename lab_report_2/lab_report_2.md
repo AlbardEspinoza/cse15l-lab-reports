@@ -130,9 +130,87 @@ public class Server {
 * How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
   * The only value of any field that changed from this specific request was the messages field in the Handler class in StringServer.java. The way it changed was by passing a specific value to the query string in the **/add-mesages** path, which was "First attempt." This was stored in the first index of the messages ArrayList.
 
-![](https://github.com/AlbardEspinoza/cse15l-lab-reports/blob/main/lab_report_2/screenshots/Second_attempt.png)
+![Image](https://github.com/AlbardEspinoza/cse15l-lab-reports/blob/main/lab_report_2/screenshots/Second_attempt.png)
 
 * Which methods are called in this example? What are the relevant arguments to those methods, and the values of any relevant fields of the class?
   * The answers to these questions are the same as the previous example.
 * How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
   * The only value of any field that changed from this specific request was the messages field in the Handler class in StringServer.java. The way it changed was by passing a specific value to the query string in the **/add-mesages** path, which was "First attempt." This was stored in the first index of the messages ArrayList. Then when called the **/add-mesages** path again the messages field stored a second value in its ArrayList, which was "Second attempt."
+
+## Part 2
+
+**Failure-inducing input and an input that doesn't induce failure for ArrayExamples.ReverseInPlace**
+
+```Java
+import static org.junit.Assert.*;
+import org.junit.*;
+
+public class ArrayTests {
+  
+  // Test with input that doesn't induce failure
+	@Test 
+	public void testReverseInPlace() {
+    		int[] input1 = { 3 };
+    		ArrayExamples.reverseInPlace(input1);
+    		assertArrayEquals(new int[]{ 3 }, input1);
+	}
+	
+  // Test with failure-inducing input
+	@Test
+	public void testReversedInPlace2() {
+				int[] input1 = {1, 2, 3, 4};
+				ArrayExamples.reverseInPlace(input1);
+  			assertArrayEquals(new int[]{ 4, 3, 2, 1 }, input1);
+	}
+}
+```
+
+```Java
+public class ArrayExamples {
+
+  // Changes the input array to be in reversed order
+  static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+}
+```
+
+**Symptoms of tests**
+
+![Image](https://github.com/AlbardEspinoza/cse15l-lab-reports/blob/main/lab_report_2/screenshots/symptom_of_tests.png)
+
+**Bug before fix**
+
+```Java
+public class ArrayExamples {
+
+  // Changes the input array to be in reversed order
+  static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+}
+```
+
+**Bug after fix**
+
+```Java
+public class ArrayExamples {
+
+  // Changes the input array to be in reversed order
+  static void reverseInPlace(int[] arr) {
+	int[] copyArr = new int[arr.length];
+	System.arraycopy(arr, 0, copyArr, 0, arr.length);
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = copyArr[copyArr.length - i - 1];
+    }
+  }
+}
+```
+
+**Fix description**
+
+* What was happening in reverseInPlace before the fix was that it was reversing the array on top of the original array. So, it was able to copy correctly up until half of the array, if the array was of even-length, or until half of the array plus one, if the array was of odd-length. The fix was to simple store a copy of the original array and use the copy as as a reference to copy to correct values into the original array.
