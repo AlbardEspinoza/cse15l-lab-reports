@@ -103,11 +103,11 @@ public class Server {
 
 **Example of calling "localhost:8081"**
 
-![Image](https://github.com/AlbardEspinoza/cse15l-lab-reports/blob/main/lab_report_2/screenshots/404_not_found.png)
+![Image](screenshots/404_not_found.png)
 
 **Examples of calling "/add-message" path**
 
-![Image](https://github.com/AlbardEspinoza/cse15l-lab-reports/blob/main/lab_report_2/screenshots/First_attempt.png)
+![Image](screenshots/First_attempt.png)
 
 * Which methods are called in this example? What are the relevant arguments to those methods, and the values of any relevant fields of the class?
   1. Main method in StringServer.java to begin the program
@@ -129,7 +129,7 @@ public class Server {
 * How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
   * The only value of any field that changed from this specific request was the messages field in the Handler class in StringServer.java. The way it changed was by passing a specific value to the query string in the **/add-mesages** path, which was "First attempt." This was stored in the first index of the messages ArrayList.
 
-![Image](https://github.com/AlbardEspinoza/cse15l-lab-reports/blob/main/lab_report_2/screenshots/Second_attempt.png)
+![Image](screenshots/Second_attempt.png)
 
 * Which methods are called in this example? What are the relevant arguments to those methods, and the values of any relevant fields of the class?
   * The answers to these questions are the same as the previous example.
@@ -178,7 +178,7 @@ public class ArrayExamples {
 
 **Symptoms of tests**
 
-![Image](https://github.com/AlbardEspinoza/cse15l-lab-reports/blob/main/lab_report_2/screenshots/symptom_of_tests.png)
+![Image](screenshots/symptom_of_tests.png)
 
 **Bug before fix**
 
