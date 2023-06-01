@@ -18,11 +18,18 @@
   1. Open up your favorite internet browser(Chrome, Firefox, Safari, etc.)
 
   2. In the search bar type the following link: [https://code.visualstudio.com/download](https://code.visualstudio.com/download).
-     ![Image](https://github.com/AlbardEspinoza/cse15l-lab-reports/blob/main/lab_report_1/VSCode_download_page.png)
-  3. To choose the correct version of VSCode to download you need to know exactly which version of the macOS you're running as well as some hardware specs of your laptop. To do this go to your Mac's menu bar and click the Apple logo and select the first option labeled: **About This Mac**. This will open up an overview of your laptop's specifications(see the image below) like the version of macOS as well as the processor. If your laptop is running a macOS version 10.11+ then select the version of VSCode that is under the Apple logo labeled **macOS 10.11+**. If it's running a previous version you will have to download the .zip files based on the processor that you're laptop has. If the processor section of your laptop's specs states that is using Intel, then select the .zip file labeled **Intel chip**. If you have one of the latest Mac laptops you might have an M1 or M2 processor. If that's the case choose the .zip file labeled **Apple silicon**. ![Image](https://github.com/AlbardEspinoza/cse15l-lab-reports/blob/main/lab_report_1/Laptop_specs_example.png)
-  4. After selecting the option in the previous step you will be redirected to a download page(see the image below) and VSCode will automatically start downloading. If VSCode does not automatically start downloading within a minute, click on the link in the page labeled **direct download link**.![Image](https://github.com/AlbardEspinoza/cse15l-lab-reports/blob/main/lab_report_1/Download_link.png)
+     ![Image](screenshots/VSCode_download_page.png)
+  
+  3. To choose the correct version of VSCode to download you need to know exactly which version of the macOS you're running as well as some hardware specs of your laptop. To do this go to your Mac's menu bar and click the Apple logo and select the first option labeled: **About This Mac**. This will open up an overview of your laptop's specifications(see the image below) like the version of macOS as well as the processor. If your laptop is running a macOS version 10.11+ then select the version of VSCode that is under the Apple logo labeled **macOS 10.11+**. If it's running a previous version you will have to download the .zip files based on the processor that you're laptop has. If the processor section of your laptop's specs states that is using Intel, then select the .zip file labeled **Intel chip**. If you have one of the latest Mac laptops you might have an M1 or M2 processor. If that's the case choose the .zip file labeled **Apple silicon**. ![Image](screenshots/Laptop_specs_example.png)
+  
+  4. After selecting the option in the previous step you will be redirected to a download page(see the image below) and VSCode will automatically start downloading. If VSCode does not automatically start downloading within a minute, click on the link in the page labeled **direct download link**.![Image](screenshots/Download_link.png)
+  
   5. After VSCode is finished downloading, open Finder and select the Downloads section. To spot the VSCode download quickly you can right-click on Finder and click on the option **Sort By > Date Created**. Depending on the VSCode version you downloaded the .zip file in your downloads will generically be labeled **VSCode-some_text.zip**. Double-click that .zip file.
-  6. Next you will see the VSCode application being created in your Downloads folder(see the image below). You need to move VSCode from your Downloads directory to your Applications directory. To do that you can just easily drag the VSCode icon within the Downloads directory and drop it in the Applications directory within the Finder window.![Image](https://github.com/AlbardEspinoza/cse15l-lab-reports/blob/main/lab_report_1/VSCode_downloaded_app.png)
+  
+  6. Next you will see the VSCode application being created in your Downloads folder(see the image below). You need to move VSCode from your Downloads directory to your Applications directory. To do that you can just easily drag the VSCode icon within the Downloads directory and drop it in the Applications directory within the Finder window.
+  
+     ![Image](screenshots/VSCode_downloaded_app.png)
+  
   7. Next, the macOS will ask you for your user password to be able to move VSCode in the Applications directory. Type is and press Enter.
      **Success** :thumbsup: You have successfully installed VSCode to your local environment. Feel free to open and play around with the IDE.
 
@@ -32,7 +39,7 @@
 
   * **Prerequisites**: Before we begin this step you need to have access to your course-specific CSE 15L account. I will explain how to look up your username to your account and reset the password.
     1. Head to the following link: [https://sal.ucsd.edu/students/a16619808](https://sal.ucsd.edu/students/a16619808). You will need to provide your Student Single Sign-On credentials.
-    2. When you log in you will see a dashboard will all the resources that are provided in the classes that you're taking. One of them will be labeled "CSE15L" (see image displayed below). The username that is circled in the image below will be your username to log into the remote server. Make sure you write this down.![Image](https://github.com/AlbardEspinoza/cse15l-lab-reports/blob/main/lab_report_1/account_lookup.png)
+    2. When you log in you will see a dashboard will all the resources that are provided in the classes that you're taking. One of them will be labeled "CSE15L" (see image displayed below). The username that is circled in the image below will be your username to log into the remote server. Make sure you write this down.![Image](screenshots/account_lookup.png)
     3. You need to reset the password for that account. Head to the following link: [http://password.ucsd.edu/](http://password.ucsd.edu/). You will be redirected to a password change tool. At the bottom of the page, you will see a prompt asking for the username of the account you want to reset the password. Provide the username you got in step 3.
     4. A link will show up labeled "I want to reset my course-specific account", click it.
     5. You will need to verify your UCSD student email address on the following page. When you do, an email will be sent to your student email address with a link to reset your CSE 15L account password.
@@ -58,6 +65,6 @@
 3. Finally, let's try a few commands in the server to get familiar with the environment.
     1. You're probably curious about what's in this remote server. Like files, pictures, etc. Type the command **ls -a**. This command will list all the files that are present in that directory. Including the hidden files that do not show up on Finder.
     2. You might also be curious about which directory you're on right now. Type **pwd**. This command will print to the terminal the directory that you're currently on.
-    3. Lastly, let's try out making a directory in your current working directory. Type **mkdir test**. This command will create a directory in your current working directory named test! See the image below listing examples of running the commands.![Image](https://github.com/AlbardEspinoza/cse15l-lab-reports/blob/main/lab_report_1/command_examples.png)
+    3. Lastly, let's try out making a directory in your current working directory. Type **mkdir test**. This command will create a directory in your current working directory named test! See the image below listing examples of running the commands.![Image](screenshots/command_examples.png)
 
 **You're all set to begin in CSE 15L. Hope this tutorial was helpful! If you need any extra help don't hesitate to ask your TAs or attend your professor's office hours.**
