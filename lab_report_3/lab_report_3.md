@@ -3,7 +3,7 @@
 ## find -- walk a file hierarchy
 
 * **Description:** The find utility recursively descends the directory tree for each path listed, evaluating an
-  expression (composed of the ``primaries'' and ``operands'' listed below) in terms of each file in
+  expression (composed of primaries'' and operands'') in terms of each file in
   the tree.
 
 * **Options:**
@@ -22,7 +22,7 @@
   
   * **-size _n_:**
   
-    * True if the file's size, rounded up, in 512-byte blocks is n.  If n is followed by a c, then the primary is true if the file's size is n bytes (characters).  Similarly if n is followed by a scale indicator then the file's size is compared to _n_ scaled as:
+    * Displays file(s) if the file's size, rounded up, in 512-byte blocks is n.  If n is followed by a c, then the primary is true if the file's size is n bytes (characters).  Similarly if n is followed by a scale indicator then the file's size is compared to _n_ scaled as:
   
       * **k:** kilobytes (1024 bytes)
       * **M:** megabytes (1024 kilobytes)
@@ -382,71 +382,71 @@
   *   **-size _n_:**
       
     * ```bash
-        ➜  docsearch git:(main) find technical -size +70k
+      ➜  docsearch git:(main) find technical -size +70k
       technical/government/About_LSC/commission_report.txt
-        technical/government/About_LSC/State_Planning_Report.txt
-        technical/government/Env_Prot_Agen/multi102902.txt
-        technical/government/Env_Prot_Agen/ctf7-10.txt
-        technical/government/Env_Prot_Agen/ctf1-6.txt
-        technical/government/Env_Prot_Agen/ctm4-10.txt
-        technical/government/Env_Prot_Agen/atx1-6.txt
-        technical/government/Env_Prot_Agen/bill.txt
-        technical/government/Env_Prot_Agen/tech_adden.txt
-        technical/government/Alcohol_Problems/Session3-PDF.txt
-        technical/government/Alcohol_Problems/Session4-PDF.txt
-        technical/government/Gen_Account_Office/d0269g.txt
-        technical/government/Gen_Account_Office/Testimony_cg00010t.txt
-        technical/government/Gen_Account_Office/GovernmentAuditingStandards_yb2002ed.txt
-        technical/government/Gen_Account_Office/Sept27-2002_d02966.txt
-        technical/government/Gen_Account_Office/d01376g.txt
-        technical/government/Gen_Account_Office/Statements_Feb28-1997_volume.txt
-        technical/government/Gen_Account_Office/pe1019.txt
-        technical/government/Gen_Account_Office/gg96118.txt
-        technical/government/Gen_Account_Office/July11-2001_gg00172r.txt
-        technical/government/Gen_Account_Office/d01591sp.txt
-        technical/government/Gen_Account_Office/Oct15-2001_d0224.txt
-        technical/government/Gen_Account_Office/im814.txt
-        technical/government/Gen_Account_Office/ai00134.txt
-        technical/government/Gen_Account_Office/ai9868.txt
-        technical/government/Gen_Account_Office/May1998_ai98068.txt
-        technical/government/Gen_Account_Office/d02701.txt
-        technical/government/Post_Rate_Comm/Mitchell_6-17-Mit.txt
-        technical/biomed/gb-2002-3-7-research0036.txt
-        technical/biomed/1472-6904-2-5.txt
-        technical/biomed/gb-2002-3-11-research0059.txt
-        technical/biomed/1472-6807-3-1.txt
-        technical/biomed/gb-2002-3-12-research0086.txt
-        technical/biomed/gb-2002-3-12-research0083.txt
-        technical/biomed/1476-511X-1-2.txt
-        technical/biomed/1471-2105-3-18.txt
-        technical/biomed/1471-2202-3-1.txt
-        technical/biomed/1472-6882-1-10.txt
-        technical/biomed/1471-2105-3-2.txt
-        technical/biomed/1476-069X-2-9.txt
-        technical/911report/chapter-13.4.txt
-        technical/911report/chapter-13.5.txt
-        technical/911report/chapter-13.1.txt
-        technical/911report/chapter-13.2.txt
-        technical/911report/chapter-13.3.txt
-        technical/911report/chapter-3.txt
-        technical/911report/chapter-2.txt
-        technical/911report/chapter-1.txt
-        technical/911report/chapter-5.txt
-        technical/911report/chapter-6.txt
-        technical/911report/chapter-7.txt
-        technical/911report/chapter-9.txt
-        technical/911report/chapter-8.txt
-        technical/911report/chapter-12.txt
-        ➜  docsearch git:(main)
-        ```
+      technical/government/About_LSC/State_Planning_Report.txt
+      technical/government/Env_Prot_Agen/multi102902.txt
+      technical/government/Env_Prot_Agen/ctf7-10.txt
+      technical/government/Env_Prot_Agen/ctf1-6.txt
+      technical/government/Env_Prot_Agen/ctm4-10.txt
+      technical/government/Env_Prot_Agen/atx1-6.txt
+      technical/government/Env_Prot_Agen/bill.txt
+      technical/government/Env_Prot_Agen/tech_adden.txt
+      technical/government/Alcohol_Problems/Session3-PDF.txt
+      technical/government/Alcohol_Problems/Session4-PDF.txt
+      technical/government/Gen_Account_Office/d0269g.txt
+      technical/government/Gen_Account_Office/Testimony_cg00010t.txt
+      technical/government/Gen_Account_Office/GovernmentAuditingStandards_yb2002ed.txt
+      technical/government/Gen_Account_Office/Sept27-2002_d02966.txt
+      technical/government/Gen_Account_Office/d01376g.txt
+      technical/government/Gen_Account_Office/Statements_Feb28-1997_volume.txt
+      technical/government/Gen_Account_Office/pe1019.txt
+      technical/government/Gen_Account_Office/gg96118.txt
+      technical/government/Gen_Account_Office/July11-2001_gg00172r.txt
+      technical/government/Gen_Account_Office/d01591sp.txt
+      technical/government/Gen_Account_Office/Oct15-2001_d0224.txt
+      technical/government/Gen_Account_Office/im814.txt
+      technical/government/Gen_Account_Office/ai00134.txt
+      technical/government/Gen_Account_Office/ai9868.txt
+      technical/government/Gen_Account_Office/May1998_ai98068.txt
+      technical/government/Gen_Account_Office/d02701.txt
+      technical/government/Post_Rate_Comm/Mitchell_6-17-Mit.txt
+      technical/biomed/gb-2002-3-7-research0036.txt
+      technical/biomed/1472-6904-2-5.txt
+      technical/biomed/gb-2002-3-11-research0059.txt
+      technical/biomed/1472-6807-3-1.txt
+      technical/biomed/gb-2002-3-12-research0086.txt
+      technical/biomed/gb-2002-3-12-research0083.txt
+      technical/biomed/1476-511X-1-2.txt
+      technical/biomed/1471-2105-3-18.txt
+      technical/biomed/1471-2202-3-1.txt
+      technical/biomed/1472-6882-1-10.txt
+      technical/biomed/1471-2105-3-2.txt
+      technical/biomed/1476-069X-2-9.txt
+      technical/911report/chapter-13.4.txt
+      technical/911report/chapter-13.5.txt
+      technical/911report/chapter-13.1.txt
+      technical/911report/chapter-13.2.txt
+      technical/911report/chapter-13.3.txt
+      technical/911report/chapter-3.txt
+      technical/911report/chapter-2.txt
+      technical/911report/chapter-1.txt
+      technical/911report/chapter-5.txt
+      technical/911report/chapter-6.txt
+      technical/911report/chapter-7.txt
+      technical/911report/chapter-9.txt
+      technical/911report/chapter-8.txt
+      technical/911report/chapter-12.txt
+      ➜  docsearch git:(main)
+      ```
       
-        In this example what I intended was to display all the files that were above 70 kilobytes. This is helpful since it allows you to filter the files that have more content. **SOURCE: [phind.com](phind.com)** 
+      In this example what I intended was to display all the files that were above 70 kilobytes. This is helpful since it allows you to filter the files that have more content. **SOURCE: [phind.com](phind.com)** 
       
-      * ```bash
-        ➜  docsearch git:(main) find technical -size +100M
-        ➜  docsearch git:(main)
-        ```
+    * ```bash
+      ➜  docsearch git:(main) find technical -size +100M
+      ➜  docsearch git:(main)
+      ```
       
-        In this example what I intended was to display the files that were above 100 megabytes. This is very useful since usually text files that are above 100 megabytes are considered heavy. If you're low on storage in your computer and also if you don't need to have those heavy files on hand you can filter the withthe previous command, save them on Google drive or any remote storage and delete the files from your local storage. **SOURCE: [phind.com](phind.com)** 
+      In this example what I intended was to display the files that were above 100 megabytes. This is very useful since usually text files that are above 100 megabytes are considered heavy. If you're low on storage in your computer and also if you don't need to have those heavy files on hand you can filter the withthe previous command, save them on Google drive or any remote storage and delete the files from your local storage. **SOURCE: [phind.com](phind.com)** 
       
         
