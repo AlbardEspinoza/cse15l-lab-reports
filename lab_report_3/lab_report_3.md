@@ -57,3 +57,32 @@
       ```
 
       My intetion in this example was to get all the aid documentation under the technical/government directory. Unfortunately, I did not know exactly what the case for each letter was in each file. Thankfully, **find -iname** is case-insensitive which allowed to just diplay the pattern **"`*aid*`"** and it displayed all the files containing that pattern regardless of the case.
+
+    * ```bash
+      ➜  docsearch git:(main) find technical -name "*lawsuit*"
+      ➜  docsearch git:(main)
+      ```
+
+      My intention in  this example was to find any possible files that were part of a lawsuit. Thankfully the command did not find any lawsuit files in any of the directories under technical :relieved:.
+
+  * **-empty:** 
+
+    * ```bash
+      ➜  docsearch git:(main) find technical -empty
+      ➜  docsearch git:(main)
+      ```
+
+      My intention in this example was to see if we han any uncesseray files. So I decided to look up any files that were empty. Thankfully I did not fing any so I did not have to remove any unecessary files.
+
+    * ```bash
+      ➜  docsearch git:(main) touch technical/biomed/empty_file_example.txt
+      ➜  docsearch git:(main) ✗ find technical -empty
+      technical/biomed/empty_file_example.txt
+      ➜  docsearch git:(main) ✗
+      ```
+
+    * In this example I tried to demonstrate how the find example displayed an empty file. I first created an empty file in technical/biomed/ then I used the find command with the -empty option to see if it would be able to find and display it. It fortunately found it and displayed the path from my current directory up until the file.
+
+  * **-perm _[-|+]mode_:**
+
+    * 
