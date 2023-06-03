@@ -10,7 +10,7 @@
 
   * **-iname _pattern_**  
     
-    * Displays files or directories if the last component of the pathname being examined matches _pattern_.  Special shell pattern matching characters `(``['', ``]'', ``*'', and ``?'')` may be used as part of pattern.  These characters may be matched explicitly by escaping them with a backslash `(``\'')`. **Source: man page for the find command.**
+    * Displays files or directories if the last component of the pathname being examined matches _pattern_.  Special shell pattern matching characters `(``['', ``]'', ``*'', and ``?'')` may be used as part of pattern.  These characters may be matched explicitly by escaping them with a backslash `(``\'')`. Match is case-insensitive. **Source: man page for the find command.**
     
   * **-empty:** 
   
@@ -32,6 +32,28 @@
   
       **Source: man page for the find command.**
 
-* **Examples:**
+* **Examples(current working directory is docsearch):**
+
   * **-iname _pattern_:**
-    * 
+
+    * ```bash
+      ➜ docsearch git:(main) find technical/government -iname "*aid*"
+      technical/government/About_LSC/ONTARIO_LEGAL_AID_SERIES.txt
+      technical/government/Media/Legal-aid_chief.txt
+      technical/government/Media/Providing_Legal_Aid.txt
+      technical/government/Media/Legal_Aid_in_Clay_County.txt
+      technical/government/Media/Poor_Lacking_Legal_Aid.txt
+      technical/government/Media/Workers_aid_center.txt
+      technical/government/Media/Coup_Reshapes_Legal_Aid.txt
+      technical/government/Media/Legal_Aid_looks_to_legislators.txt
+      technical/government/Media/Marylands_Legal_Aid.txt
+      technical/government/Media/Legal_Aid_Society.txt
+      technical/government/Media/Domestic_violence_aid.txt
+      technical/government/Media/Legal_Aid_attorney.txt
+      technical/government/Media/less_legal_aid.txt
+      technical/government/Media/Bridging_legal_aid_gap.txt
+      technical/government/Media/Legal_Aid_campaign.txt
+      technical/government/Media/Aid_Gets_7_Million.txt
+      ```
+
+      My intetion in this example was to get all the aid documentation under the technical/government directory. Unfortunately, I did not know exactly what the case for each letter was in each file. Thankfully, **find -iname** is case-insensitive which allowed to just diplay the pattern **"`*aid*`"** and it displayed all the files containing that pattern regardless of the case.
