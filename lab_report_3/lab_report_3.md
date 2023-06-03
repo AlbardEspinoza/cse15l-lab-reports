@@ -16,9 +16,9 @@
   
     * Displays the file(s) or directory(ies) that are empty. **Source: man page for the find command.**
   
-  * **-perm _[-|+]mode_:**
+  * **-perm _`[-|+]`mode_:**
   
-    *  The mode may be either symbolic (see chmod(1)) or an octal number.  If the mode is symbolic, a starting value of zero is assumed and the mode sets or clears permissions without regard to the process' file mode creation mask.  If the mode is octal, only bits `07777 (S_ISUID | S_ISGID | S_ISTXT | S_IRWXU | S_IRWXG | S_IRWXO)` of the file's mode bits participate in the comparison.  If the mode is preceded by a dash `(``-'')`, this primary evaluates to true if at least all of the bits in the mode are set in the file's mode bits.  If the mode is preceded by a plus `(``+'')`, this primary evaluates to true if any of the bits in the mode are set in the file's mode bits.  Otherwise, this primary evaluates to true if the bits in the mode exactly match the file's mode bits.  Note, the first character of a symbolic mode may not be a dash `(``-'')`. **Source: man page for the find command.**
+    *  The mode may be either symbolic (see chmod(1)) or an octal number.  If the mode is symbolic, a starting value of zero is assumed and the mode sets or clears permissions without regard to the process' file mode creation mask.  If the mode is octal, only bits `07777 (S_ISUID | S_ISGID | S_ISTXT | S_IRWXU | S_IRWXG | S_IRWXO)` of the file's mode bits participate in the comparison.  If the mode is preceded by a dash (-), this primary evaluates to true if at least all of the bits in the mode are set in the file's mode bits.  If the mode is preceded by a plus (+), this primary evaluates to true if any of the bits in the mode are set in the file's mode bits.  Otherwise, this primary evaluates to true if the bits in the mode exactly match the file's mode bits.  Note, the first character of a symbolic mode may not be a dash (-). **Source: man page for the find command.**
   
   * **-size _n_:**
   
